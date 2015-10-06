@@ -5,7 +5,8 @@
 // @author       Eddy
 // @include      http*://boards.4chan.org/b/thread/*
 // @updateURL    https://raw.github.com/specialeddy/namesync-fancifier/master/namesync-fancifier.user.js
-// @version      0.0.0.2
+// @grant        none
+// @version      0.0.0.3
 // @icon         data:image/png;base64,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
 // ==/UserScript==
 
@@ -17,10 +18,16 @@ return new Za.prototype.init(a,b,c,d,e)}m.Tween=Za,Za.prototype={constructor:Za,
 
 $(document).ready(function() {
   
-  
   //alert("The script is loaded!");
-
+  
+  //Imports custom font, appends to head when document is finished loading
+  
+  $("head").append("<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>");
+  
+  //Every time the Namesync server syncs names
+  
   function update() {
+    
     //Backup working syntax, in case I fuck stuff up
     //
     //Single class
@@ -29,7 +36,7 @@ $(document).ready(function() {
     //Multiple classes in an array
     //$( ".nameBlock" ).css({"outline":"1px dashed #98abb9","outline-offset":"-3px","background-color":"#556068","padding":"6px"});
 
-    $( ".nameBlock" ).css({"outline":"1px dashed #98abb9","outline-offset":"-3px","background-color":"#556068","padding":"6px"});
+    $( ".nameBlock" ).css({"outline":"1px dashed #98abb9","outline-offset":"-3px","background-color":"#556068","padding":"6px","font-family":"'Lobster'"});
 
     // NamesSynced event listener test
     // alert("The names have been synced!")
